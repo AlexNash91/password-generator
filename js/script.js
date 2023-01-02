@@ -52,5 +52,15 @@ function generatePassword() {
         guaranteedCharacters.push("O")
     }
 
+    // Setting up loop
+    for (let i = 0; i < options.length; i++) {
+        var random = Math.floor(Math.random() * possibleCharacters.length - 1) + 1
+        result.push(possibleCharacters[random + 1])
+        
+    }
+    console.log(result)
+    
+
+
 }
 
