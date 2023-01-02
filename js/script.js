@@ -27,3 +27,30 @@ function getPasswordOptions() {
         }
 }
 
+// function to generate password
+function generatePassword() {
+    // setting up variables
+    var options = getPasswordOptions()
+    var result = []
+    var possibleCharacters = []
+    var guaranteedCharacters = []
+    // setting up arrays
+    if (options.hasSpecialCharacters) {
+        possibleCharacters.push("!","@","#","$","%","^","&","*","(",")")
+        guaranteedCharacters.push("!")
+    }
+    if (options.hasNumericChacters) {
+        possibleCharacters.push("1","2","3","4","5","6","7","8","9")
+        guaranteedCharacters.push("4")
+    }
+    if (options.hasLowercaseLetters) {
+        possibleCharacters.push("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z") 
+        guaranteedCharacters.push("d")
+    }
+    if (options.hasUppercaseLetters) {
+        possibleCharacters.push("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",)
+        guaranteedCharacters.push("O")
+    }
+
+}
+
