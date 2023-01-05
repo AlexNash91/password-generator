@@ -74,9 +74,11 @@ var generateBtn = document.querySelector('#generate')
 // fix text
 function writePassword() {
     var password = generatePassword();
-    var passwordText = document.querySelector('#password')
-    passwordText.value = password
+    var passwordText = document.querySelector('.container-2')
+    // passwordText.value = password
+    passwordText.textContent = password
     
+   
 
 
 }
