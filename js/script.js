@@ -56,11 +56,32 @@ function generatePassword() {
     for (let i = 0; i < options.length; i++) {
         var random = Math.floor(Math.random() * possibleCharacters.length - 1) + 1
         result.push(possibleCharacters[random + 1])
-        
     }
-    console.log(result)
+    // guaranteed characters loop
+
+
+    // Turning result into string and removing commas, then returning
+    let string = result.toString();
+    var finalString = string.replaceAll(',','')
+    console.log(string)
+    console.log(finalString)
+    return finalString;
+    
+    
+}
+    
+var generateBtn = document.querySelector('#generate')
+// fix text
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector('#password')
+    passwordText.value = password
     
 
 
 }
+
+generateBtn.addEventListener('click', writePassword)
+
+
 

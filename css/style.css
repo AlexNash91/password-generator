@@ -40,7 +40,7 @@ h2 {
     justify-content: center;
 }
 
-.generate {
+#generate {
     margin-top: 75px;
     color: white;
     background-color: rgb(107, 31, 107);
@@ -48,4 +48,9 @@ h2 {
     height: 50px;
     width: 250px;
     border-radius: 50px;  
+}
+
+#generate:active {
+    transform: scale(0.98);
+    box-shadow: 3px 3px 5px gray;
 }
