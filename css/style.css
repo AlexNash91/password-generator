@@ -8,9 +8,10 @@ h1 {
 .container {
     height: 700px;
     width: 1700px;
-    border: solid black;
+    border: 1px solid black;
     margin-left: 100px;
-    box-shadow: 10px 10px grey
+    box-shadow: 10px 10px 30px grey;
+    border-radius: 10px;
 
 
 }
@@ -24,12 +25,16 @@ h2 {
 .container-2 {
     height: 50%;
     width: 75%;
-    border: solid black;
+    border: dashed gray;
     margin-left: 210px;
     text-align: center;
     margin-top: 50px;
     padding-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border
+    
 }
 
 #btnDiv {
@@ -39,5 +44,13 @@ h2 {
 
 .generate {
     margin-top: 75px;
+    color: white;
+    background-color: rgb(107, 31, 107);
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    
+
     
 }
