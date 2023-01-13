@@ -57,9 +57,7 @@ function generatePassword() {
         var random = Math.floor(Math.random() * possibleCharacters.length) 
         result.push(possibleCharacters[random])
     }
-    // guaranteed characters loop
-
-
+    
     // Turning result into string and removing commas, then returning
     let string = result.toString();
     var finalString = string.replaceAll(',','')
